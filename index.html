@@ -13,26 +13,48 @@
 
 <body>
     <header>
-        <img src="logo.png" alt="logo Calito">
-        <div class="divNav">
-            <nav class="nav">
-                <ul class="listaUl">
-                    <li class="li1"><a class="a1" href=""> Inicio</a></li>
-                    <li class="li2"><a class="a2" href="">Servicios</a></li>
-                    <li class="li3"><a class="a3" href="">Clientes</a></li>
-                </ul>
-                <div class="hide">
-                    <i class="fa-solid fa-bars">Menu</i>
-                </div>                
-            </nav>
-        </div>
+        <img src="logo.png" alt="Logo Calito" class="logo" />
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li>
+                    <a href="#">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="#">Productos</a>
+                </li>
+                <li>
+                    <a href="#">Contactenos</a>
+                </li>
+            </ul>
+            <img src="cart-icon.svg" alt="Carrito de compras" class="cart-icon" />
+        </nav>
     </header>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(".hide").on('click', function() {
-         $("ul").toggle('slow');
-        });
-    </script>
+    <main>
+        <section class="presentacion">
+            <div class="presentacion-info">
+                <img src="logo.png" alt="">
+                <h1><br> <strong>Accesorios para peludxs</strong> </h1>
+                <p>Nuestros productos estan pensados para acompañar <br> a nuestras mascotas en todos sus entornos.</p>
+                <div class="botones-ad">
+                    <a href="#">Adopta</a>
+                    <a href="#">Dona</a>
+                </div>
+
+            </div>
+            <div class="productos-card">
+                <img class="collares-img" src="collares.jpg" alt="">
+            
+            </div>
+        </section>
+        <section class="info">
+
+            <p>Calito accesorios es una empresa nacdia en Mexico que hoy en dia produce y vende en Cordoba Argentina.
+                Nuestro objetivo es reducir el consumo de plastico y ayudar a los perrxs de la calle. Con cada compra colaboras con FUNDACION GARRA <br>
+                 Nuestros productos : Collares/Correas/Chalecos/Camas/Juguetes/Pañuelos/Chapitas.
+            </p>
+
+        </section>
+    </main>
 </body>
 
 </html>
