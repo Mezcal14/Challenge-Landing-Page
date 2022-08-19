@@ -106,13 +106,13 @@ header {
 }
 
 .collares-img {
-    height: 400px;
-    width: 80%;
-    font-weight: 800;
+    width: 350px;
+    
+    
 }
 
 .productos-card {
-    width: 500px;
+    width: 400px;
     background: #d4a373;
     padding: 20px;
     margin: 20px;
