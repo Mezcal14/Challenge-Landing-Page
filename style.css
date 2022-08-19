@@ -84,6 +84,9 @@ header {
     flex-direction: column;
     gap: 30px;
     width: 40%;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .presentacion-info h1 {
@@ -107,6 +110,8 @@ header {
 
 .collares-img {
     width: 350px;
+    cursor: pointer;
+   
     
     
 }
@@ -127,7 +132,7 @@ header {
 .presentacion-info img {
 
     width: 300px;
-    margin-left: 100px;
+   
 }
 
 .info {
