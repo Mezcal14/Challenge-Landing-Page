@@ -1,0 +1,140 @@
+/* TABLETS */
+
+
+
+@media (max-width: 992px) {
+    .cart-icon {
+        border: 0px solid;
+        height: 40px;
+
+    }
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background-color: var(--background);
+        border: 2px solid #606c38;
+        border-top: none;
+        border-radius: 0px 0px 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 20px;
+        z-index: 2;
+        display: none;
+
+    }
+
+    .navbar-list a {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .menu-label {
+        display: flex;
+        order: 1;
+        cursor: pointer;
+    }
+
+    .menu-label img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #menu-toggle:checked+.navbar-list {
+        display: flex;
+
+    }
+
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 90%;
+        text-align: center;
+    }
+
+    #info h2 {
+        text-align: center;
+    }
+
+    .info-card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .li-redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .mapa {
+        padding-top: 20px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/* CELUS */
+
+@media (max-width: 727px) {
+
+
+
+    .h1-presentacion {
+        display: none;
+    }
+
+    .p-presentacion {
+        display: none;
+    }
+
+    .categories {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: auto;
+        margin: auto;
+
+    }
+
+   
+
+
+
+}

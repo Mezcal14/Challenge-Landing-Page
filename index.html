@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="mediaqueries.css">
     <title>Calito Accesorios</title>
 </head>
 
@@ -15,6 +16,10 @@
     <header>
         <img src="logo.png" alt="Logo Calito" class="logo" />
         <nav class="navbar">
+            <label for="menu-toggle" class="menu-label">
+                <img src="menu.png" class="menu-icon" alt="icono menu">
+            </label>
+            <input type="checkbox" id="menu-toggle" />
             <ul class="navbar-list">
                 <li>
                     <a href="#">Sobre nosotros</a>
@@ -26,15 +31,151 @@
                     <a href="#">Contactenos</a>
                 </li>
             </ul>
-            <img src="cart-icon.svg" alt="Carrito de compras" class="cart-icon" />
+
+            <label for="cart-toggle" class="cart-label">
+                <img src="cart-icon.svg" alt="Carrito de compras" class="cart-icon" />
+            </label>
+            <input type="checkbox" id="cart-toggle">
+
+            <div class="cart">
+                <h2>Tus productos</h2>
+                <div class="cart-item">
+                    <img src="camas.jpg" alt="Foto camas">
+                    <div class="item-info">
+                        <h3 class="item-title">Camas</h3>
+                        <span class="item-price">$6500</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="cuantity-handler down">-</span>
+                        <span class="item-cuantity">1</span>
+                        <span class="cuantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="correa.jpg" alt="Foto correas">
+                    <div class="item-info">
+                        <h3 class="item-title">Correas</h3>
+                        <span class="item-price">$2500</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="cuantity-handler down">-</span>
+                        <span class="item-cuantity">1</span>
+                        <span class="cuantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="collar.jpg" alt="Foto collar">
+                    <div class="item-info">
+                        <h3 class="item-title">Collares</h3>
+                        <span class="item-price">$1100</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="cuantity-handler down">-</span>
+                        <span class="item-cuantity">1</span>
+                        <span class="cuantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="chaleco.jpg" alt="Foto Chalecos">
+                    <div class="item-info">
+                        <h3 class="item-title">Chalecos</h3>
+                        <span class="item-price">$2100</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="cuantity-handler down">-</span>
+                        <span class="item-cuantity">1</span>
+                        <span class="cuantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="pañuelo.jpg" alt="Foto pañuelo">
+                    <div class="item-info">
+                        <h3 class="item-title">Pañuelos</h3>
+                        <span class="item-price">$900</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="cuantity-handler down">-</span>
+                        <span class="item-cuantity">1</span>
+                        <span class="cuantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="bolsa.jpg" alt="Foto bolsa">
+                    <div class="item-info">
+                        <h3 class="item-title">Bolsa</h3>
+                        <span class="item-price">$5600</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="cuantity-handler down">-</span>
+                        <span class="item-cuantity">1</span>
+                        <span class="cuantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="juguete.jpg" alt="Foto Juguetes">
+                    <div class="item-info">
+                        <h3 class="item-title">Juguetes</h3>
+                        <span class="item-price">$1100</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="cuantity-handler down">-</span>
+                        <span class="item-cuantity">1</span>
+                        <span class="cuantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="chapita.jpg" alt="Foto chapita">
+                    <div class="item-info">
+                        <h3 class="item-title">Chapitas</h3>
+                        <span class="item-price">$1100</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="cuantity-handler down">-</span>
+                        <span class="item-cuantity">1</span>
+                        <span class="cuantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="granada.jpg" alt="Foto Granadar">
+                    <div class="item-info">
+                        <h3 class="item-title">Granada</h3>
+                        <span class="item-price">$1100</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="cuantity-handler down">-</span>
+                        <span class="item-cuantity">1</span>
+                        <span class="cuantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <span class="divider"></span>
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span>$muchisimo</span>
+                </div>
+                <button class="btn-add">Comprar</button>
+
+
+            </div>
+
         </nav>
+
     </header>
     <main>
         <section class="presentacion">
             <div class="presentacion-info">
                 <img src="logo.png" alt="">
-                <h1><br> <strong>Accesorios para peludxs</strong> </h1>
-                <p>Nuestros productos estan pensados para acompañar <br> a nuestras mascotas en todos sus entornos.</p>
+                <h1 class="h1-presentacion"><br> <strong>Accesorios para peludxs</strong> </h1>
+                <p class="p-presentacion">Nuestros productos estan pensados para acompañar <br> a nuestras mascotas en
+                    todos sus entornos.</p>
                 <div class="botones-ad">
                     <a href="#">Adopta</a>
                     <a href="#">Dona</a>
@@ -43,18 +184,201 @@
             </div>
             <div class="productos-card">
                 <img class="collares-img" src="collares.jpg" alt="">
-            
+
             </div>
         </section>
-        <section class="info">
+        <section id="info">
 
-            <p>Calito accesorios es una empresa nacdia en Mexico que hoy en dia produce y vende en Cordoba Argentina.
-                Nuestro objetivo es reducir el consumo de plastico y ayudar a los perrxs de la calle. Con cada compra colaboras con FUNDACION GARRA <br>
-                 Nuestros productos : Collares/Correas/Chalecos/Camas/Juguetes/Pañuelos.
-            </p>
+            <h2>Mejor que sea <strong>Calito accesorios</strong>
+            </h2>
+            <div class="info-card-container">
+                <div class="info-card">
+                    <img src="recicla.png" alt="">
+                    <h3>Menos plastico</h3>
+                    <p>Comprando un producto de <strong>Calito Accesorios</strong> coloaboras con la reduccion de
+                        consumo de plastico.</p>
+                </div>
 
+                <div class="info-card">
+                    <img src="corazon.png" alt="">
+                    <h3>Materiales super resistentes</h3>
+                    <p>Comprando un producto de <strong>Calito Accesorios</strong> te aseguras un producto para toda la
+                        vida</p>
+                </div>
+
+                <div class="info-card">
+                    <img src="lavaropas.png" alt="">
+                    <h3>Productos lavables</h3>
+                    <p>Todos los productos de <strong>Calito Accesorios</strong> son apros para lavarropas.</p>
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <h2>Nuestros productos</h2>
+            <div class="categories">
+                <button class="category active">Collares</button>
+                <button class="category">Correas</button>
+                <button class="category">Camas</button>
+                <button class="category">Chalecos</button>
+                <button class="category">Pañuelos</button>
+                <button class="category">Bolsas</button>
+                <button class="category">Juguetes</button>
+                <button class="category">Chapitas</button>
+                <button class="category">Granadas</button>
+            </div>
+
+            <div class="product-container">
+                <div class="products">
+                    <img src="collares.jpg" alt="foto collares">
+                    <div class="product-info">
+                        <h3>Collares de algodón</h3>
+                        <p>Artesanales</p>
+                        <span>$1100</span>
+
+                    </div>
+                    <button>Agregar</button>
+
+                </div>
+
+
+                <div class="products">
+                    <img src="correa.jpg" alt="foto correa">
+                    <div class="product-info">
+                        <h3>Correa de algodón</h3>
+                        <p>Artesanales </p>
+                        <span>$2800</span>
+                    </div>
+                    <button>Agregar</button>
+
+                </div>
+
+
+                <div class="products">
+                    <img src="camas.jpg" alt="foto camas">
+                    <div class="product-info">
+                        <h3>Camas</h3>
+                        <p>Fabricadas en Panama </p>
+                        <span>$6500</span>
+                    </div>
+                    <button>Agregar</button>
+
+                </div>
+
+
+                <div class="products">
+                    <img src="chaleco.jpg" alt="foto chaleco">
+                    <div class="product-info">
+                        <h3>Chalecos</h3>
+                        <p>Tela de jogyn </p>
+                        <span>$6500</span>
+                    </div>
+                    <button>Agregar</button>
+
+                </div>
+
+
+                <div class="products">
+                    <img src="pañuelo.jpg" alt="foto pañuelo">
+                    <div class="product-info">
+                        <h3>Pañuelos</h3>
+                        <p>Fabricadas en Tusor s</p>
+                        <span>$6500</span>
+                    </div>
+                    <button>Agregar</button>
+
+                </div>
+
+
+                <div class="products">
+                    <img src="bolsa.jpg" alt="foto bolsa">
+                    <div class="product-info">
+                        <h3>Bolsa de dormir</h3>
+                        <p>Lorem ipsum dolor</p>
+                        <span>$5600</span>
+                    </div>
+                    <button>Agregar</button>
+
+                </div>
+
+
+                <div class="products">
+                    <img src="juguete.jpg" alt="foto juguete">
+                    <div class="product-info">
+                        <h3>Juguetes de algodon</h3>
+                        <p>Artesanales</p>
+                        <span>$1500</span>
+                    </div>
+                    <button>Agregar</button>
+
+                </div>
+
+
+                <div class="products">
+                    <img src="chapita.jpg" alt="foto chapita">
+                    <div class="product-info">
+                        <h3>Chapita</h3>
+                        <p>Artesanales</p>
+                        <span>$450</span>
+                    </div>
+
+                    <button>Agregar</button>
+                </div>
+
+
+                <div class="products">
+                    <img src="granada.jpg" alt="foto granada">
+                    <div class="product-info">
+                        <h3>Granada</h3>
+                        <p>Artesanales</p>
+                        <span>$1000</span>
+                    </div>
+                    <button>Agregar</button>
+                </div>
+            </div>
+
+
+            </div>
         </section>
     </main>
+    <footer>
+        <section class="footer-content">
+            <div>
+                <h2>Contactanos</h2>
+                <div class="cordoba">
+                    <h3>Cordoba - Argentina</h3>
+                </div>
+                <div class="cont-contactanos">
+                    <ul class="ul-contactanos">
+                        <li class="li-contacto"> <img src="ubicacion.png" alt="logo ubicacion"> Calle Toti 1412</li>
+                        <li class="li-contacto"><img src="email.png" alt="logo email"> <a
+                                href="#">calitoaccesoriosargentina@gmail.com</a></li>
+                        <li class="li-contacto"> <img src="whatsapp.png" alt="wap logo"><a href="#"> +549 35 14 52 68
+                                29</a></li>
+                    </ul>
+                    <div class="redes">
+                        <ul class="li-redes">
+                            <li> <img class="logo-redes" src="insta.png" alt=""> </li>
+                            <li> <img class="logo-redes" src="face.png" alt=""><a href=""></a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mapa">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13710.511599114436!2d-64.6517054672081!3d-30.785021355901417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942deb751d30a281%3A0xcf3af38a9ae4d221!2sSan%20Marcos%20Sierras%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1661874086145!5m2!1ses-419!2sar"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+        </section>
+
+    </footer>
+    <div class="logo-final">
+        <img src="logo.png" alt="logo calito">
+    </div>
 </body>
 
 </html>
